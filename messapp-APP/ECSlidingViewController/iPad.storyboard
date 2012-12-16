@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3006" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="yOe-O6-osr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="vux-Sf-7zs">
+            <objects>
+                <viewController storyboardIdentifier="Menu" wantsFullScreenLayout="YES" id="K2H-Q6-O20" customClass="MenuViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dD5-Ap-SBZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="So7-0H-dny" colorLabel="IBBuiltInLabel-Blue">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.52941179275512695" green="0.53333336114883423" blue="0.54117649793624878" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="K2H-Q6-O20" id="Fyv-3Y-MrJ"/>
+                                    <outlet property="delegate" destination="K2H-Q6-O20" id="4p6-qx-0R0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WAQ-KG-3dU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-134" y="-1196"/>
+        </scene>
+        <!--Initial Sliding View Controller-->
+        <scene sceneID="lhI-ni-I43">
+            <objects>
+                <viewController restorationIdentifier="inc" storyboardIdentifier="inc" wantsFullScreenLayout="YES" id="T24-gt-xar" customClass="InitialSlidingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LWw-2V-L5S">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XGk-QE-Tsn"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pil-86-qrr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1753" y="-1188"/>
+        </scene>
+        <!--Highlights Top View Controller-->
+        <scene sceneID="srH-xs-0fc">
+            <objects>
+                <viewController storyboardIdentifier="Highlights" wantsFullScreenLayout="YES" id="8Oo-HP-N9T" customClass="HighlightsTopViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wVL-ud-63R">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="FJK-bi-dkB">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Highlights" id="h3F-Pd-bbl">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="sxd-jD-FzG">
+                                            <connections>
+                                                <action selector="revealMenu:" destination="8Oo-HP-N9T" id="6C1-BN-1pk"/>
+                                                <segue destination="ZhK-yO-e5n" kind="push" id="Tl1-RF-Tqu"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Infos" id="PVs-c2-mco">
+                                            <connections>
+                                                <action selector="revealInfo:" destination="8Oo-HP-N9T" id="6jO-mk-dVd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="FHS_Spiluttini_bearbeitet.jpg" id="yhK-xA-YN7">
+                                <rect key="frame" x="0.0" y="44" width="1024" height="724"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J29-6k-4nR">
+                                <rect key="frame" x="20" y="44" width="284" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Eckpunkte dieses Studiengangs sind die grundlegende Vermittlung von wirtschaftlichem und technologi-schem Basiswissen, sowie ein ganzheitliches Verständ-nis über den Aufbau und die Funktionsweise von webbasierten Geschäftsmodellen, Anwendungen und Technologien, sowie Web 2.0 Techniken, mobile Anwendungen (Apps) und IT-Sicherheit. </string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Tahoma-Bold"/>
+                                            <font key="NSOriginalFont" size="15" name="Tahoma-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LpF-bb-ki7">
+                                <rect key="frame" x="153" y="507" width="791" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cyan="0.5" magenta="0.0" yellow="0.94999999999999996" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">AKTUELLE WEBTECHNOLOGIEN 
+Im Vordergrund der Ausbildung steht die praxisnahe Konzeption und Umsetzung von Lösungen im Internet. Aktuelle Themen wie Cloud Computing, serviceorientierte Architekturen, mobile Anwendungen und Web Design &amp; Usability gepaart mit einer prozessorientierten betriebswirtschaftlichen Ausbildung versetzen AbsolventInnen in die Lage, als branchenunabhängige VermittlerInnen zwischen Technikabteilungen und FachanwenderInnen zu agieren. Den Studierenden wird das dazu benötigte Handwerkszeug vermittelt. Dazu gehören beispielsweise die Softwareentwicklung mit modernen weborientierten Programmiersprachen sowie die Entwicklung von webbasierten Anwendungen mit aktuellen Web 2.0 Technologien. </string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="Tahoma-Bold"/>
+                                            <font key="NSOriginalFont" size="11" name="Tahoma-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="WEB.jpeg" id="RcT-JZ-KsI">
+                                <rect key="frame" x="853" y="192" width="144" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pG6-mz-7Dc"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30g-af-uzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="-2108"/>
+        </scene>
+        <!--Curriculum View Controller-->
+        <scene sceneID="m0k-BS-fu1">
+            <objects>
+                <viewController storyboardIdentifier="Curriculum" wantsFullScreenLayout="YES" id="VuW-Q4-Kdw" customClass="CurriculumViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wkv-sR-l1J">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="jem-Wp-5bW">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Curriculum" id="rB5-Wy-SII">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="NOX-S1-bI9">
+                                            <connections>
+                                                <action selector="Menu:" destination="VuW-Q4-Kdw" id="e5F-6A-LEi"/>
+                                                <segue destination="ZhK-yO-e5n" kind="push" id="kcM-Me-BIy"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Infos" id="nci-mH-YId">
+                                            <connections>
+                                                <action selector="Info:" destination="VuW-Q4-Kdw" id="GH6-gd-4CB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" maximumZoomScale="5" id="l6Z-g6-pgy">
+                                <rect key="frame" x="0.0" y="44" width="1024" height="724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="web_cu.jpg" id="Avy-G0-yuO">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="704"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="VuW-Q4-Kdw" id="Xgy-Rc-jog"/>
+                                    <outletCollection property="gestureRecognizers" destination="N1C-Xt-lZz" appends="YES" id="VdA-Bb-dr6"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52941179275512695" green="0.53333336114883423" blue="0.54117649793624878" alpha="1" colorSpace="deviceRGB"/>
+                        <gestureRecognizers/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="Avy-G0-yuO" id="ocE-cW-TgO"/>
+                        <outlet property="scrollView" destination="l6Z-g6-pgy" id="QRx-v2-LSY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pOm-Ve-zqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="N1C-Xt-lZz">
+                    <connections>
+                        <action selector="doubleTap:" destination="VuW-Q4-Kdw" id="pez-dd-rME"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1366" y="-3072"/>
+        </scene>
+        <!--Fakten Top View Controller-->
+        <scene sceneID="lWc-JQ-woD">
+            <objects>
+                <viewController storyboardIdentifier="Fakten" wantsFullScreenLayout="YES" id="dFt-9b-hTF" customClass="FaktenTopViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ho-ZQ-DBS">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Br5-ar-RcA">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" id="ak1-Cw-fKy">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <items>
+                                            <navigationItem title="Fakten" id="DkT-Bm-V1Z">
+                                                <barButtonItem key="leftBarButtonItem" title="Home" id="ZfY-ec-hHn">
+                                                    <connections>
+                                                        <action selector="Menu:" destination="dFt-9b-hTF" id="aBU-0W-NPD"/>
+                                                        <segue destination="ZhK-yO-e5n" kind="push" id="JVd-KO-Vxm"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                                <barButtonItem key="rightBarButtonItem" title="Info" id="l7h-xM-UVi">
+                                                    <connections>
+                                                        <action selector="Info:" destination="dFt-9b-hTF" id="ln3-no-vGh"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                    <imageView userInteractionEnabled="NO" alpha="0.30000000000000016" contentMode="scaleToFill" image="FHKufstein_grau60_EN.png" id="PIV-ww-pIL">
+                                        <rect key="frame" x="0.0" y="44" width="1024" height="724"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BeS-jP-qVf">
+                                        <rect key="frame" x="489" y="31" width="535" height="650"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="ORGANISATIONSFORM">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.47843140363693237" green="0.73725491762161255" blue="0.35686275362968445" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="30" name="Tahoma-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.47843140363693237" green="0.73725491762161255" blue="0.35686275362968445" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="24" name="Tahoma-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="10" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Vollzeit ">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="9" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">STUDIENPLÄTZE PRO JAHR 25 
+BEWERBUNGSMODUS </string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.47843140363693237" green="0.73725491762161255" blue="0.35686275362968445" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="30" name="Tahoma-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="10" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Onlinebewerbung, Dokumente per Upload ">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="9" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="DAUER ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.47843140363693237" green="0.73725491762161255" blue="0.35686275362968445" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="30" name="Tahoma-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="10" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="6 Semester">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="21" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="9" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="AKADEMISCHER GRAD ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.47843140363693237" green="0.73725491762161255" blue="0.35686275362968445" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="30" name="Tahoma-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="10" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Bachelor of Science in Engineering (B.Sc.) ">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="9" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="BESONDERHEITEN">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.47843140363693237" green="0.73725491762161255" blue="0.35686275362968445" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="30" name="Tahoma-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="30" name="Tahoma-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="10" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="80 % Deutsch, 20 % Englisch ">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="9" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="AUSLANDSAUFENTHALT">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.47843140363693237" green="0.73725491762161255" blue="0.35686275362968445" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="30" name="Tahoma-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.47843140363693237" green="0.73725491762161255" blue="0.35686275362968445" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="24" name="Tahoma-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="10" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Auslandssemester im 5. Semester, Berufspraktikum im 6. Semester auch im Ausland möglich">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+IAo
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="9" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="KOSTEN">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.47843140363693237" green="0.73725491762161255" blue="0.35686275362968445" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="30" name="Tahoma-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.47843140363693237" green="0.73725491762161255" blue="0.35686275362968445" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="24" name="Tahoma-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="10" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Pro Semester: Studiengebühr 363,36 Euro (zzgl. ÖH-Beitrag) ">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="9" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="ZUGANGSVORAUSSETZUNGEN ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.47843140363693237" green="0.73725491762161255" blue="0.35686275362968445" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="30" name="Tahoma-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="10" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="10.050000000000001" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="siehe www.fh-kufstein.ac.at/bewerberInnen ">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Stoeckl.png" id="g4X-WL-l0T">
+                                        <rect key="frame" x="20" y="554" width="115" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.70000000000000007" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q4Q-GH-hTh">
+                                        <rect key="frame" x="124" y="572" width="283" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cyan="0.5" magenta="0.0" yellow="0.94999999999999996" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Ihre Ansprechpartnerin: 
+Daniela Stöckl </string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.95686280727386475" green="0.98431378602981567" blue="0.9647059440612793" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="14" name="Tahoma-Bold"/>
+                                                    <font key="NSOriginalFont" size="14" name="Tahoma-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.95686280727386475" green="0.98431378602981567" blue="0.9647059440612793" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="9" name="Tahoma"/>
+                                                    <font key="NSOriginalFont" size="9" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Tel: +43 5372 71819 170 
+E-Mail: daniela.stoeckl@fh-kufstein.ac.at </string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.95686280727386475" green="0.98431378602981567" blue="0.9647059440612793" alpha="1" colorSpace="deviceRGB"/>
+                                                    <font key="NSFont" size="14" name="Tahoma"/>
+                                                    <font key="NSOriginalFont" size="14" name="Tahoma"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rA4-wF-Lqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1372" y="-6733"/>
+        </scene>
+        <!--Studiengangsleitung Top View Controller-->
+        <scene sceneID="gpR-Xo-ego">
+            <objects>
+                <viewController storyboardIdentifier="Studiengangsleitung" wantsFullScreenLayout="YES" id="qOv-6A-dIg" customClass="StudiengangsleitungTopViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UFp-tq-M6l">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="jJO-Kn-FeX">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Studiengangsleitung" id="hW4-hW-HgO">
+                                        <barButtonItem key="leftBarButtonItem" title="Studiengänge" id="gMQ-2I-IGW">
+                                            <connections>
+                                                <action selector="revealMenu:" destination="qOv-6A-dIg" id="4vl-da-Zu0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Info" id="MgR-KK-S3K">
+                                            <connections>
+                                                <action selector="revealInfo:" destination="qOv-6A-dIg" id="cY6-GS-Sxw"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="FHS_Spiluttini_bearbeitet.jpg" id="NIF-29-lgd">
+                                <rect key="frame" x="0.0" y="44" width="1024" height="724"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52941179279999995" green="0.53333336109999996" blue="0.5411764979" alpha="1" colorSpace="deviceRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mlm-bj-blb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="-5821"/>
+        </scene>
+        <!--Berufsfelder Top View Controller-->
+        <scene sceneID="zkm-ZQ-rVn">
+            <objects>
+                <viewController storyboardIdentifier="Berufsfelder" wantsFullScreenLayout="YES" id="siq-ia-eCs" customClass="BerufsfelderTopViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f8g-Kv-ZNm">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="MvV-r6-dVV">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Berufsfelder" id="kTP-r8-p6h">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="mXe-Ue-Ij9">
+                                            <connections>
+                                                <action selector="revealMenu:" destination="siq-ia-eCs" id="CEf-cM-Jkg"/>
+                                                <segue destination="ZhK-yO-e5n" kind="push" id="3wY-gw-MSv"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Infos" id="Vw4-n1-Hwr">
+                                            <connections>
+                                                <action selector="revealInfo:" destination="siq-ia-eCs" id="kyH-ZZ-9w6"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000013" contentMode="scaleToFill" image="FHS_Spiluttini_bearbeitet.jpg" id="xXn-ft-ur6">
+                                <rect key="frame" x="0.0" y="44" width="1024" height="724"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Vl-LH-rOJ">
+                                <rect key="frame" x="20" y="62" width="790" height="495"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="BERUFSFELDER">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99215692281723022" green="0.98823535442352295" blue="0.97647064924240112" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="40" name="Tahoma-Bold"/>
+                                            <font key="NSOriginalFont" size="18" name="Tahoma-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+DQ
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99215692281723022" green="0.98823535442352295" blue="0.97647064924240112" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="18" name="Tahoma-Bold"/>
+                                            <font key="NSOriginalFont" size="18" name="Tahoma-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">>> IT-FachexpertInnen / Assistenz der Geschäftsführung
+>> BeraterIn, insbesondere Web-Consulting
+>> AnwendungsdesignerIn, FachprojektleiterIn
+>> SoftwareentwicklerInnen, speziell für Web und Client/Server
+>> Web-Marketing Management
+>> DienstleisterIn im IT Betrieb (Application Service Provider)
+>> selbständige Unternehmertätigkeit</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99215692281723022" green="0.98823535442352295" blue="0.97647064924240112" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="26" name="Tahoma-Bold"/>
+                                            <font key="NSOriginalFont" size="18" name="Tahoma-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WST-Dc-2Z4">
+                                <rect key="frame" x="608" y="514" width="276" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">„Neue webbasierte Geschäftsmodelle 
+entwickeln und mit Web-Technologien 
+umsetzen – das finde ich spannend.“ </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99215692280000001" green="0.98823535439999999" blue="0.97647064920000004" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="14" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99215692280000001" green="0.98823535439999999" blue="0.97647064920000004" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="9" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Anna-Maria Mair, Studentin ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.54117649793624878" green="0.77647066116333008" blue="0.26274511218070984" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="18" name="Tahoma-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Anna_Web.png" id="OQ3-DF-jHH">
+                                <rect key="frame" x="800" y="600" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5058823823928833" green="0.50980395078659058" blue="0.52549022436141968" alpha="1" colorSpace="deviceRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YM2-Gd-QGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1379" y="-4897"/>
+        </scene>
+        <!--Organisations Top View Controller-->
+        <scene sceneID="EfK-9Z-z4T">
+            <objects>
+                <viewController storyboardIdentifier="Organisation" wantsFullScreenLayout="YES" id="2T2-WA-Jdl" customClass="OrganisationsTopViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Bb-67-Ygl">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="1ow-ww-WN0">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Organisation" id="zN2-yi-Hpc">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="VLp-aG-092">
+                                            <connections>
+                                                <action selector="revealMenu:" destination="2T2-WA-Jdl" id="g8u-uM-s8C"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Infos" id="Yue-0U-OPs">
+                                            <connections>
+                                                <action selector="revealInfo:" destination="2T2-WA-Jdl" id="B1u-Aa-rU4"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="FHS_Spiluttini_bearbeitet.jpg" id="hJR-qd-v01">
+                                <rect key="frame" x="0.0" y="44" width="1024" height="724"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52941179279999995" green="0.53333336109999996" blue="0.5411764979" alpha="1" colorSpace="deviceRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Yd-4I-aHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="-3958"/>
+        </scene>
+        <!--Stg Main Top View Controller-->
+        <scene sceneID="td2-Ue-ODF">
+            <objects>
+                <viewController storyboardIdentifier="WEBTop" wantsFullScreenLayout="YES" id="EhZ-4j-ywu" customClass="StgMainTopViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3h2-V4-Shd">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="FHS_Spiluttini_bearbeitet.jpg" id="yLl-aO-4Rn">
+                                <rect key="frame" x="0.0" y="44" width="1024" height="704"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" restorationIdentifier="Highlights" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" id="VQn-VZ-UId">
+                                <rect key="frame" x="0.0" y="44" width="384" height="237"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <attributedString key="attributedText">
+                                    <fragment content="HIGHLIGHTS ">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="Tahoma-Bold"/>
+                                            <font key="NSOriginalFont" size="11" name="Rockwell-ExtraBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18.050000000000001" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="Tahoma-Bold"/>
+                                            <font key="NSOriginalFont" size="11" name="Rockwell-ExtraBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18.050000000000001" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">>> Ganzheitliche Betrachtung webbasierter  Geschäftsmodelle und Technologien 
+>> Ausbildung im betriebswirtschaftlichen und technischen Bereich 
+>> Kompetenzerwerb zur Konzeption von 
+       Lösungen von der Idee bis zur 
+       Implementierung 
+>> Aktuelle Themen aus der Praxis: Cloud Computing, Web Design &amp; Usability, IT- Sicherheit, mobile Anwendungen </string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="Tahoma-Bold"/>
+                                            <font key="NSOriginalFont" size="11" name="Rockwell-ExtraBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="29" minimumLineHeight="13.050000000000001" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="leb-9i-8w4" appends="YES" id="YfX-5w-TPr"/>
+                                </connections>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" directionalLockEnabled="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" id="HsV-3M-f0D">
+                                <rect key="frame" x="599" y="551" width="331" height="187"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cyan="0.5" magenta="0.0" yellow="0.95000000000000007" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">„Webbasierte Technologien durchdringen zunehmend unseren Alltag und ermöglichen neue Geschäftsmodelle im Web und in der realen Welt. Unsere 
+Studierenden werden für diese 
+Herausforderungen vorbereite</string>
+                                        <attributes>
+                                            <color key="NSColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                            <font key="NSFont" size="16" name="Tahoma"/>
+                                            <font key="NSOriginalFont" size="11" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="t.“">
+                                        <attributes>
+                                            <color key="NSColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                            <font key="NSFont" size="11" name="Tahoma"/>
+                                            <font key="NSOriginalFont" size="11" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+IAo
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Prof. (FH) Dipl.-Inf. Karsten Böhm 
+Studiengangsleiter </string>
+                                        <attributes>
+                                            <color key="NSColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                            <font key="NSFont" size="19" name="Tahoma-Bold"/>
+                                            <font key="NSOriginalFont" size="9" name="Tahoma-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="boehm.png" id="cGc-jx-diB">
+                                <rect key="frame" x="908" y="587" width="138" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" id="Bbq-8E-aJ7">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="WEB-BUSINESS &amp; TECHNOLOGIE" id="bUE-8v-ZiY">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="1Fw-Xv-Z4v">
+                                            <connections>
+                                                <action selector="revealMenu:" destination="EhZ-4j-ywu" id="PIf-pO-1iZ"/>
+                                                <segue destination="ZhK-yO-e5n" kind="push" id="ShK-Rd-vJl"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Info" id="FJu-cu-k9P">
+                                            <connections>
+                                                <action selector="revealInfo:" destination="EhZ-4j-ywu" id="yig-ey-74E"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="MainBar" destination="Bbq-8E-aJ7" id="QZW-iv-LJf"/>
+                        <outlet property="highlights" destination="VQn-VZ-UId" id="lYt-Zl-Q6N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tdM-JP-CfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="leb-9i-8w4">
+                    <connections>
+                        <action selector="Highlights:" destination="EhZ-4j-ywu" id="kOV-MT-MJ0"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="w6F-bq-Acj"/>
+            </objects>
+            <point key="canvasLocation" x="1356" y="-1121"/>
+        </scene>
+        <!--Extras View Controller-->
+        <scene sceneID="lD1-B4-aXE">
+            <objects>
+                <tableViewController storyboardIdentifier="Extras" wantsFullScreenLayout="YES" id="HUx-p0-9NJ" customClass="ExtrasViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="dGB-Ia-LVm">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.50588238240000005" green="0.50980395079999996" blue="0.52549022440000004" alpha="1" colorSpace="deviceRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <color key="separatorColor" red="0.50588238240000005" green="0.50980395079999996" blue="0.52549022440000004" alpha="1" colorSpace="deviceRGB"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="HUx-p0-9NJ" id="8FX-ZC-qny"/>
+                            <outlet property="delegate" destination="HUx-p0-9NJ" id="lsN-Qj-wxU"/>
+                        </connections>
+                    </tableView>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="Tyo-Kv-5mr" id="9GB-UB-SDR"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmP-nh-T4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fRZ-en-cf4"/>
+                <searchDisplayController id="Tyo-Kv-5mr">
+                    <connections>
+                        <outlet property="delegate" destination="HUx-p0-9NJ" id="UHw-xq-eh9"/>
+                        <outlet property="searchContentsController" destination="HUx-p0-9NJ" id="93h-mV-LEm"/>
+                        <outlet property="searchResultsDataSource" destination="HUx-p0-9NJ" id="bdp-2E-aXN"/>
+                        <outlet property="searchResultsDelegate" destination="HUx-p0-9NJ" id="ZLg-ye-aSe"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="3454" y="-1153"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fHW-Ps-LYX">
+            <objects>
+                <navigationController wantsFullScreenLayout="YES" navigationBarHidden="YES" id="yOe-O6-osr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tPc-qB-DXG">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZhK-yO-e5n" kind="relationship" relationship="rootViewController" id="pGM-BI-D9d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VhM-rQ-NtV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6257" y="-1310"/>
+        </scene>
+        <!--Ma Collection View Main Controller-->
+        <scene sceneID="UVW-NJ-KtZ">
+            <objects>
+                <collectionViewController restorationIdentifier="main" storyboardIdentifier="main" wantsFullScreenLayout="YES" id="ZhK-yO-e5n" customClass="maCollectionViewMainController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="ZcL-pW-VJs">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZxA-ex-HfJ">
+                            <size key="itemSize" width="244" height="248"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="mainCell" reuseIdentifier="mainCell" id="0VO-CE-lzp" customClass="maMainCell">
+                                <rect key="frame" x="0.0" y="0.0" width="244" height="248"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="244" height="248"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="qkr-m0-bp2">
+                                            <rect key="frame" x="0.0" y="0.0" width="244" height="180"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z62-ib-bvm">
+                                            <rect key="frame" x="0.0" y="188" width="244" height="60"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="mainImage" destination="qkr-m0-bp2" id="BzS-Lk-bTA"/>
+                                    <outlet property="mainLabel" destination="Z62-ib-bvm" id="2eR-ya-5kR"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ZhK-yO-e5n" id="KDz-Xy-dXQ"/>
+                            <outlet property="delegate" destination="ZhK-yO-e5n" id="9Nk-oV-1h2"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="mwC-3Q-02w"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTe-Pe-bsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4775" y="-1260"/>
+        </scene>
+        <!--Ma Collection View Controller-->
+        <scene sceneID="CKW-r5-iWi">
+            <objects>
+                <collectionViewController restorationIdentifier="stg" storyboardIdentifier="stg" wantsFullScreenLayout="YES" id="IgA-Nc-dMy" customClass="maCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="mRR-ev-7jv">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UnF-bK-RUz">
+                            <size key="itemSize" width="252" height="248"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="stgCell" reuseIdentifier="stgCell" id="cs4-tv-V1h" customClass="maSTGCell">
+                                <rect key="frame" x="0.0" y="0.0" width="252" height="248"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="252" height="248"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="top" id="vGy-Aq-165">
+                                            <rect key="frame" x="0.0" y="0.0" width="252" height="180"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lx8-Du-PwQ">
+                                            <rect key="frame" x="4" y="183" width="244" height="65"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="stgImage" destination="vGy-Aq-165" id="l0W-Aw-GdN"/>
+                                    <outlet property="stgLabel" destination="Lx8-Du-PwQ" id="oEK-Vk-uys"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="IgA-Nc-dMy" id="ecb-L1-hrd"/>
+                            <outlet property="delegate" destination="IgA-Nc-dMy" id="SzI-jF-80D"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="pMK-BT-8VK"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqH-z8-pCD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3310" y="-1166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Anna_Web.png" width="945" height="764"/>
+        <image name="FHKufstein_grau60_EN.png" width="2839" height="1825"/>
+        <image name="FHS_Spiluttini_bearbeitet.jpg" width="1136" height="757"/>
+        <image name="Stoeckl.png" width="674" height="902"/>
+        <image name="WEB.jpeg" width="945" height="588"/>
+        <image name="boehm.png" width="674" height="965"/>
+        <image name="web_cu.jpg" width="2500" height="3350"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="pGM-BI-D9d"/>
+    </inferredMetricsTieBreakers>
+</document>
