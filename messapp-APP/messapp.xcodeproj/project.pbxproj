@@ -14,7 +14,6 @@
 		170D1DFC166F510400F5B371 /* FHKufstein_reinschwarz_EN.png in Resources */ = {isa = PBXBuildFile; fileRef = 170D1DFB166F510400F5B371 /* FHKufstein_reinschwarz_EN.png */; };
 		170D1E00166F56C000F5B371 /* boehm.png in Resources */ = {isa = PBXBuildFile; fileRef = 170D1DFF166F56C000F5B371 /* boehm.png */; };
 		17665401167527E400ECEE66 /* HighlightsTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17665400167527E400ECEE66 /* HighlightsTopViewController.m */; };
-		176654091675290100ECEE66 /* CurriculumTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176654081675290100ECEE66 /* CurriculumTopViewController.m */; };
 		1766540D16752B5000ECEE66 /* BerufsfelderTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1766540C16752B5000ECEE66 /* BerufsfelderTopViewController.m */; };
 		1766541016752C5800ECEE66 /* StudiengangsleitungTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1766540F16752C5800ECEE66 /* StudiengangsleitungTopViewController.m */; };
 		1766541616753B2100ECEE66 /* CurriculumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1766541516753B2100ECEE66 /* CurriculumViewController.m */; };
@@ -76,8 +75,6 @@
 		170D1DFF166F56C000F5B371 /* boehm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boehm.png; path = ../boehm.png; sourceTree = "<group>"; };
 		176653FF167527E400ECEE66 /* HighlightsTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightsTopViewController.h; sourceTree = "<group>"; };
 		17665400167527E400ECEE66 /* HighlightsTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighlightsTopViewController.m; sourceTree = "<group>"; };
-		176654071675290100ECEE66 /* CurriculumTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurriculumTopViewController.h; sourceTree = "<group>"; };
-		176654081675290100ECEE66 /* CurriculumTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurriculumTopViewController.m; sourceTree = "<group>"; };
 		1766540B16752B5000ECEE66 /* BerufsfelderTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BerufsfelderTopViewController.h; sourceTree = "<group>"; };
 		1766540C16752B5000ECEE66 /* BerufsfelderTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BerufsfelderTopViewController.m; sourceTree = "<group>"; };
 		1766540E16752C5800ECEE66 /* StudiengangsleitungTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudiengangsleitungTopViewController.h; sourceTree = "<group>"; };
@@ -261,8 +258,6 @@
 				1766541516753B2100ECEE66 /* CurriculumViewController.m */,
 				176653FF167527E400ECEE66 /* HighlightsTopViewController.h */,
 				17665400167527E400ECEE66 /* HighlightsTopViewController.m */,
-				176654071675290100ECEE66 /* CurriculumTopViewController.h */,
-				176654081675290100ECEE66 /* CurriculumTopViewController.m */,
 				179402D41674D842005F8F5A /* StgMainTopViewController.h */,
 				179402D51674D842005F8F5A /* StgMainTopViewController.m */,
 				179402D11674CC94005F8F5A /* OrganisationsTopViewController.h */,
@@ -435,7 +430,6 @@
 				17762D34167354F800CB26B4 /* AnimatedViewController.m in Sources */,
 				179402D31674CC94005F8F5A /* OrganisationsTopViewController.m in Sources */,
 				17665401167527E400ECEE66 /* HighlightsTopViewController.m in Sources */,
-				176654091675290100ECEE66 /* CurriculumTopViewController.m in Sources */,
 				1766540D16752B5000ECEE66 /* BerufsfelderTopViewController.m in Sources */,
 				1766541016752C5800ECEE66 /* StudiengangsleitungTopViewController.m in Sources */,
 				1766541616753B2100ECEE66 /* CurriculumViewController.m in Sources */,
