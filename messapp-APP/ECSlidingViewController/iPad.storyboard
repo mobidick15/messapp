@@ -70,7 +70,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="sxd-jD-FzG">
                                             <connections>
                                                 <action selector="revealMenu:" destination="8Oo-HP-N9T" id="6C1-BN-1pk"/>
-                                                <segue destination="ZhK-yO-e5n" kind="push" id="Tl1-RF-Tqu"/>
+                                                <segue destination="jjZ-6f-qBR" kind="push" id="5x2-5D-Iku"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Infos" id="PVs-c2-mco">
@@ -156,7 +156,7 @@ Im Vordergrund der Ausbildung steht die praxisnahe Konzeption und Umsetzung von 
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="NOX-S1-bI9">
                                             <connections>
                                                 <action selector="Menu:" destination="VuW-Q4-Kdw" id="e5F-6A-LEi"/>
-                                                <segue destination="ZhK-yO-e5n" kind="push" id="kcM-Me-BIy"/>
+                                                <segue destination="jjZ-6f-qBR" kind="push" id="5cJ-2v-kl7"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Infos" id="nci-mH-YId">
@@ -224,7 +224,7 @@ Im Vordergrund der Ausbildung steht die praxisnahe Konzeption und Umsetzung von 
                                                 <barButtonItem key="leftBarButtonItem" title="Home" id="ZfY-ec-hHn">
                                                     <connections>
                                                         <action selector="Menu:" destination="dFt-9b-hTF" id="aBU-0W-NPD"/>
-                                                        <segue destination="ZhK-yO-e5n" kind="push" id="JVd-KO-Vxm"/>
+                                                        <segue destination="jjZ-6f-qBR" kind="push" id="JWH-ZM-GGM"/>
                                                     </connections>
                                                 </barButtonItem>
                                                 <barButtonItem key="rightBarButtonItem" title="Info" id="l7h-xM-UVi">
@@ -672,6 +672,7 @@ E-Mail: daniela.stoeckl@fh-kufstein.ac.at </string>
                                         <barButtonItem key="leftBarButtonItem" title="Studiengänge" id="gMQ-2I-IGW">
                                             <connections>
                                                 <action selector="revealMenu:" destination="qOv-6A-dIg" id="4vl-da-Zu0"/>
+                                                <segue destination="jjZ-6f-qBR" kind="push" id="cfM-9f-UVn"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Info" id="MgR-KK-S3K">
@@ -714,7 +715,7 @@ E-Mail: daniela.stoeckl@fh-kufstein.ac.at </string>
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="mXe-Ue-Ij9">
                                             <connections>
                                                 <action selector="revealMenu:" destination="siq-ia-eCs" id="CEf-cM-Jkg"/>
-                                                <segue destination="ZhK-yO-e5n" kind="push" id="3wY-gw-MSv"/>
+                                                <segue destination="jjZ-6f-qBR" kind="push" id="0sT-Bt-anZ"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Infos" id="Vw4-n1-Hwr">
@@ -843,6 +844,7 @@ Cg
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="VLp-aG-092">
                                             <connections>
                                                 <action selector="revealMenu:" destination="2T2-WA-Jdl" id="g8u-uM-s8C"/>
+                                                <segue destination="jjZ-6f-qBR" kind="push" id="pNq-m1-6Je"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Infos" id="Yue-0U-OPs">
@@ -877,20 +879,18 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="FHS_Spiluttini_bearbeitet.jpg" id="yLl-aO-4Rn">
-                                <rect key="frame" x="0.0" y="44" width="1024" height="704"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" restorationIdentifier="Highlights" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" id="VQn-VZ-UId">
-                                <rect key="frame" x="0.0" y="44" width="384" height="237"/>
+                                <rect key="frame" x="409" y="78" width="595" height="237"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <attributedString key="attributedText">
-                                    <fragment content="HIGHLIGHTS ">
+                                    <fragment>
+                                        <string key="content">Highlights 
+</string>
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="20" name="Tahoma-Bold"/>
-                                            <font key="NSOriginalFont" size="11" name="Rockwell-ExtraBold"/>
+                                            <font key="NSFont" size="30" name="Tahoma-Bold"/>
+                                            <font key="NSOriginalFont" size="25" name="Tahoma-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18.050000000000001" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -902,7 +902,7 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="16" name="Tahoma-Bold"/>
+                                            <font key="NSFont" metaFont="smallSystem"/>
                                             <font key="NSOriginalFont" size="11" name="Rockwell-ExtraBold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18.050000000000001" defaultTabInterval="36">
                                                 <tabStops/>
@@ -912,14 +912,24 @@ Cg
                                     <fragment>
                                         <string key="content">>> Ganzheitliche Betrachtung webbasierter  Geschäftsmodelle und Technologien 
 >> Ausbildung im betriebswirtschaftlichen und technischen Bereich 
->> Kompetenzerwerb zur Konzeption von 
-       Lösungen von der Idee bis zur 
-       Implementierung 
->> Aktuelle Themen aus der Praxis: Cloud Computing, Web Design &amp; Usability, IT- Sicherheit, mobile Anwendungen </string>
+>> Kompetenzerwerb zur Konzeption von Lösungen von der Idee bis zur Implementierung 
+>> Aktuelle Themen aus der Praxis: Cloud Computing, Web Design &amp; </string>
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="16" name="Tahoma-Bold"/>
-                                            <font key="NSOriginalFont" size="11" name="Rockwell-ExtraBold"/>
+                                            <font key="NSFont" size="14" name="Tahoma"/>
+                                            <font key="NSOriginalFont" size="15" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="29" minimumLineHeight="13.050000000000001" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Usability, 
+      IT- Sicherheit, mobile Anwendungen   </string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Tahoma"/>
+                                            <font key="NSOriginalFont" size="15" name="Tahoma"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="29" minimumLineHeight="13.050000000000001" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -932,27 +942,15 @@ Cg
                                 </connections>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" directionalLockEnabled="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" id="HsV-3M-f0D">
-                                <rect key="frame" x="599" y="551" width="331" height="187"/>
+                                <rect key="frame" x="409" y="627" width="500" height="104"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" cyan="0.5" magenta="0.0" yellow="0.95000000000000007" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">„Webbasierte Technologien durchdringen zunehmend unseren Alltag und ermöglichen neue Geschäftsmodelle im Web und in der realen Welt. Unsere 
-Studierenden werden für diese 
-Herausforderungen vorbereite</string>
+                                        <string key="content">Webbasierte Technologien durchdringen zunehmend unseren Alltag 
+und ermöglichen neue Geschäftsmodelle im Web und in der realen Welt. Unsere Studierenden werden für diese Herausforderungen vorbereitet.</string>
                                         <attributes>
-                                            <color key="NSColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                            <font key="NSFont" size="16" name="Tahoma"/>
-                                            <font key="NSOriginalFont" size="11" name="Tahoma"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="t.“">
-                                        <attributes>
-                                            <color key="NSColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                            <font key="NSFont" size="11" name="Tahoma"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Tahoma"/>
                                             <font key="NSOriginalFont" size="11" name="Tahoma"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
                                                 <tabStops/>
@@ -961,21 +959,22 @@ Herausforderungen vorbereite</string>
                                     </fragment>
                                     <fragment>
                                         <string key="content" base64-UTF8="YES">
-IAo
+Cg
 </string>
                                         <attributes>
-                                            <font key="NSFont" size="11" name="Tahoma"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Tahoma"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Prof. (FH) Dipl.-Inf. Karsten Böhm 
-Studiengangsleiter </string>
+                                        <string key="content">
+Prof. (FH) Dr. Karsten Böhm, Studiengangsleiter </string>
                                         <attributes>
-                                            <color key="NSColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                            <font key="NSFont" size="19" name="Tahoma-Bold"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Tahoma"/>
                                             <font key="NSOriginalFont" size="9" name="Tahoma-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="9.0500000000000007" defaultTabInterval="36">
                                                 <tabStops/>
@@ -986,7 +985,7 @@ Studiengangsleiter </string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="boehm.png" id="cGc-jx-diB">
-                                <rect key="frame" x="908" y="587" width="138" height="141"/>
+                                <rect key="frame" x="875" y="615" width="129" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" id="Bbq-8E-aJ7">
@@ -997,7 +996,7 @@ Studiengangsleiter </string>
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="1Fw-Xv-Z4v">
                                             <connections>
                                                 <action selector="revealMenu:" destination="EhZ-4j-ywu" id="PIf-pO-1iZ"/>
-                                                <segue destination="ZhK-yO-e5n" kind="push" id="ShK-Rd-vJl"/>
+                                                <segue destination="jjZ-6f-qBR" kind="push" id="VpM-pX-eSx"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Info" id="FJu-cu-k9P">
@@ -1008,8 +1007,12 @@ Studiengangsleiter </string>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="WEB.jpeg" id="1Me-mk-PQY">
+                                <rect key="frame" x="1" y="44" width="379" height="724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.24313727021217346" green="0.24313727021217346" blue="0.25098040699958801" alpha="1" colorSpace="deviceRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -1028,7 +1031,7 @@ Studiengangsleiter </string>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="w6F-bq-Acj"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="-1121"/>
+            <point key="canvasLocation" x="1366" y="-1201"/>
         </scene>
         <!--Extras View Controller-->
         <scene sceneID="lD1-B4-aXE">
@@ -1064,7 +1067,7 @@ Studiengangsleiter </string>
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="3454" y="-1153"/>
+            <point key="canvasLocation" x="2558" y="-1208"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fHW-Ps-LYX">
@@ -1080,67 +1083,85 @@ Studiengangsleiter </string>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ZhK-yO-e5n" kind="relationship" relationship="rootViewController" id="pGM-BI-D9d"/>
+                        <segue destination="jjZ-6f-qBR" kind="relationship" relationship="rootViewController" id="tS3-F7-MX1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhM-rQ-NtV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-6257" y="-1310"/>
         </scene>
-        <!--Ma Collection View Main Controller-->
-        <scene sceneID="UVW-NJ-KtZ">
+        <!--View Controller-->
+        <scene sceneID="iTD-jw-U6I">
             <objects>
-                <collectionViewController restorationIdentifier="main" storyboardIdentifier="main" wantsFullScreenLayout="YES" id="ZhK-yO-e5n" customClass="maCollectionViewMainController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="ZcL-pW-VJs">
+                <viewController id="jjZ-6f-qBR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="92H-Vu-d75">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZxA-ex-HfJ">
-                            <size key="itemSize" width="244" height="248"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="mainCell" reuseIdentifier="mainCell" id="0VO-CE-lzp" customClass="maMainCell">
-                                <rect key="frame" x="0.0" y="0.0" width="244" height="248"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="244" height="248"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="qkr-m0-bp2">
-                                            <rect key="frame" x="0.0" y="0.0" width="244" height="180"/>
-                                        </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z62-ib-bvm">
-                                            <rect key="frame" x="0.0" y="188" width="244" height="60"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fhKufstein_messeApp_gridview_uebersicht_20121213.jpg" id="ZwB-Kd-TFo">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="h5n-P8-c27">
+                                <rect key="frame" x="65" y="563" width="323" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <outlet property="mainImage" destination="qkr-m0-bp2" id="BzS-Lk-bTA"/>
-                                    <outlet property="mainLabel" destination="Z62-ib-bvm" id="2eR-ya-5kR"/>
+                                    <segue destination="IgA-Nc-dMy" kind="push" id="KJu-mo-RCy"/>
                                 </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="ZhK-yO-e5n" id="KDz-Xy-dXQ"/>
-                            <outlet property="delegate" destination="ZhK-yO-e5n" id="9Nk-oV-1h2"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" id="mwC-3Q-02w"/>
-                    <nil key="simulatedStatusBarMetrics"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iuV-ap-wQv"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NTe-Pe-bsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vez-0I-0pT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4775" y="-1260"/>
+            <point key="canvasLocation" x="-4631" y="-1160"/>
+        </scene>
+        <!--Post Graduate Programm View Controller-->
+        <scene sceneID="QjN-Zg-9RM">
+            <objects>
+                <viewController id="9Fl-8d-43E" customClass="Post_Graduate_ProgrammViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SBK-FY-v9w">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dag-Cs-CSI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4636" y="-270"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FbG-aP-IHI">
+            <objects>
+                <viewController id="OAt-sp-YFb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fwp-6g-xPg">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CpK-E5-IrU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4631" y="586"/>
         </scene>
         <!--Ma Collection View Controller-->
         <scene sceneID="CKW-r5-iWi">
@@ -1205,14 +1226,116 @@ Studiengangsleiter </string>
         <image name="Stoeckl.png" width="674" height="902"/>
         <image name="WEB.jpeg" width="945" height="588"/>
         <image name="boehm.png" width="674" height="965"/>
+        <image name="fhKufstein_messeApp_gridview_uebersicht_20121213.jpg" width="2048" height="1536"/>
         <image name="web_cu.jpg" width="2500" height="3350"/>
     </resources>
+    <classes>
+        <class className="BerufsfelderTopViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BerufsfelderTopViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="revealInfo:"/>
+                <relationship kind="action" name="revealMenu:"/>
+            </relationships>
+        </class>
+        <class className="CurriculumViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CurriculumViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="Info:"/>
+                <relationship kind="action" name="Menu:"/>
+                <relationship kind="action" name="doubleTap:"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="ECSlidingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ECSlidingViewController.h"/>
+        </class>
+        <class className="ExtrasViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExtrasViewController.h"/>
+        </class>
+        <class className="FaktenTopViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FaktenTopViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="Info:"/>
+                <relationship kind="action" name="Menu:"/>
+            </relationships>
+        </class>
+        <class className="HighlightsTopViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HighlightsTopViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="revealInfo:"/>
+                <relationship kind="action" name="revealMenu:"/>
+            </relationships>
+        </class>
+        <class className="InitialSlidingViewController" superclassName="ECSlidingViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InitialSlidingViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="animatedImagesView" candidateClass="JSAnimatedImagesView"/>
+            </relationships>
+        </class>
+        <class className="JSAnimatedImagesView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JSAnimatedImagesView.h"/>
+        </class>
+        <class className="MenuViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
+        </class>
+        <class className="OrganisationsTopViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OrganisationsTopViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="revealInfo:"/>
+                <relationship kind="action" name="revealMenu:"/>
+            </relationships>
+        </class>
+        <class className="Post_Graduate_ProgrammViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Post_Graduate_ProgrammViewController.h"/>
+        </class>
+        <class className="StgMainTopViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StgMainTopViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="Highlights:"/>
+                <relationship kind="action" name="revealInfo:"/>
+                <relationship kind="action" name="revealMenu:"/>
+                <relationship kind="outlet" name="MainBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="highlights" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="mylable" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="StudiengangsleitungTopViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StudiengangsleitungTopViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="revealInfo:"/>
+                <relationship kind="action" name="revealMenu:"/>
+            </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="maCollectionViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/maCollectionViewController.h"/>
+        </class>
+        <class className="maSTGCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/maSTGCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="stgImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="stgLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="pGM-BI-D9d"/>
+        <segue reference="VpM-pX-eSx"/>
     </inferredMetricsTieBreakers>
 </document>

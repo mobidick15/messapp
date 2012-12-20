@@ -13,7 +13,11 @@
 		170D1DFA166F508B00F5B371 /* FHKufstein_grau60_EN.png in Resources */ = {isa = PBXBuildFile; fileRef = 170D1DF9166F508B00F5B371 /* FHKufstein_grau60_EN.png */; };
 		170D1DFC166F510400F5B371 /* FHKufstein_reinschwarz_EN.png in Resources */ = {isa = PBXBuildFile; fileRef = 170D1DFB166F510400F5B371 /* FHKufstein_reinschwarz_EN.png */; };
 		170D1E00166F56C000F5B371 /* boehm.png in Resources */ = {isa = PBXBuildFile; fileRef = 170D1DFF166F56C000F5B371 /* boehm.png */; };
+		17552E061683051300B568F2 /* fhKufstein_messeApp_gridview_uebersicht_20121213.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17552E051683051300B568F2 /* fhKufstein_messeApp_gridview_uebersicht_20121213.jpg */; };
+		17552E0A168312A500B568F2 /* Post-Graduate-ProgrammViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17552E09168312A500B568F2 /* Post-Graduate-ProgrammViewController.m */; };
+		17552E0F1683135A00B568F2 /* FH-KufsteinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17552E0C168312E100B568F2 /* FH-KufsteinViewController.m */; };
 		17665401167527E400ECEE66 /* HighlightsTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17665400167527E400ECEE66 /* HighlightsTopViewController.m */; };
+		176654091675290100ECEE66 /* CurriculumTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176654081675290100ECEE66 /* CurriculumTopViewController.m */; };
 		1766540D16752B5000ECEE66 /* BerufsfelderTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1766540C16752B5000ECEE66 /* BerufsfelderTopViewController.m */; };
 		1766541016752C5800ECEE66 /* StudiengangsleitungTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1766540F16752C5800ECEE66 /* StudiengangsleitungTopViewController.m */; };
 		1766541616753B2100ECEE66 /* CurriculumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1766541516753B2100ECEE66 /* CurriculumViewController.m */; };
@@ -33,6 +37,7 @@
 		17A070A8167643DD0049CEAB /* SKVM.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A070A5167643DD0049CEAB /* SKVM.png */; };
 		17A070A9167643DD0049CEAB /* UF.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A070A6167643DD0049CEAB /* UF.png */; };
 		17A070AB167645400049CEAB /* IBS.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A070AA167645400049CEAB /* IBS.png */; };
+		17A3684C167F4E320097B1BB /* fhKufstein_messeApp_gridview_STG_uebersicht_20121217.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17A3684B167F4E320097B1BB /* fhKufstein_messeApp_gridview_STG_uebersicht_20121217.jpg */; };
 		17E004A31664CC0000EEB056 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E004A21664CC0000EEB056 /* libsqlite3.0.dylib */; };
 		2750E77114CDB0DF007727A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2750E77014CDB0DF007727A0 /* UIKit.framework */; };
 		2750E77314CDB0DF007727A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2750E77214CDB0DF007727A0 /* Foundation.framework */; };
@@ -73,8 +78,15 @@
 		170D1DF9166F508B00F5B371 /* FHKufstein_grau60_EN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FHKufstein_grau60_EN.png; path = ../FHKufstein_grau60_EN.png; sourceTree = "<group>"; };
 		170D1DFB166F510400F5B371 /* FHKufstein_reinschwarz_EN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FHKufstein_reinschwarz_EN.png; path = ../FHKufstein_reinschwarz_EN.png; sourceTree = "<group>"; };
 		170D1DFF166F56C000F5B371 /* boehm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boehm.png; path = ../boehm.png; sourceTree = "<group>"; };
+		17552E051683051300B568F2 /* fhKufstein_messeApp_gridview_uebersicht_20121213.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fhKufstein_messeApp_gridview_uebersicht_20121213.jpg; path = "../../../../../../../Google Drive/Mess-App/UKM Material/Designs/fhKufstein_messeApp_gridview_uebersicht_20121213.jpg"; sourceTree = "<group>"; };
+		17552E08168312A500B568F2 /* Post-Graduate-ProgrammViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Post-Graduate-ProgrammViewController.h"; sourceTree = "<group>"; };
+		17552E09168312A500B568F2 /* Post-Graduate-ProgrammViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Post-Graduate-ProgrammViewController.m"; sourceTree = "<group>"; };
+		17552E0B168312E100B568F2 /* FH-KufsteinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FH-KufsteinViewController.h"; sourceTree = "<group>"; };
+		17552E0C168312E100B568F2 /* FH-KufsteinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FH-KufsteinViewController.m"; sourceTree = "<group>"; };
 		176653FF167527E400ECEE66 /* HighlightsTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightsTopViewController.h; sourceTree = "<group>"; };
 		17665400167527E400ECEE66 /* HighlightsTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighlightsTopViewController.m; sourceTree = "<group>"; };
+		176654071675290100ECEE66 /* CurriculumTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurriculumTopViewController.h; sourceTree = "<group>"; };
+		176654081675290100ECEE66 /* CurriculumTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurriculumTopViewController.m; sourceTree = "<group>"; };
 		1766540B16752B5000ECEE66 /* BerufsfelderTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BerufsfelderTopViewController.h; sourceTree = "<group>"; };
 		1766540C16752B5000ECEE66 /* BerufsfelderTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BerufsfelderTopViewController.m; sourceTree = "<group>"; };
 		1766540E16752C5800ECEE66 /* StudiengangsleitungTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudiengangsleitungTopViewController.h; sourceTree = "<group>"; };
@@ -100,6 +112,7 @@
 		17A070A5167643DD0049CEAB /* SKVM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SKVM.png; sourceTree = "<group>"; };
 		17A070A6167643DD0049CEAB /* UF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UF.png; sourceTree = "<group>"; };
 		17A070AA167645400049CEAB /* IBS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IBS.png; sourceTree = "<group>"; };
+		17A3684B167F4E320097B1BB /* fhKufstein_messeApp_gridview_STG_uebersicht_20121217.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fhKufstein_messeApp_gridview_STG_uebersicht_20121217.jpg; sourceTree = "<group>"; };
 		17E004A21664CC0000EEB056 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		2750E76C14CDB0DF007727A0 /* messapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2750E77014CDB0DF007727A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -258,6 +271,8 @@
 				1766541516753B2100ECEE66 /* CurriculumViewController.m */,
 				176653FF167527E400ECEE66 /* HighlightsTopViewController.h */,
 				17665400167527E400ECEE66 /* HighlightsTopViewController.m */,
+				176654071675290100ECEE66 /* CurriculumTopViewController.h */,
+				176654081675290100ECEE66 /* CurriculumTopViewController.m */,
 				179402D41674D842005F8F5A /* StgMainTopViewController.h */,
 				179402D51674D842005F8F5A /* StgMainTopViewController.m */,
 				179402D11674CC94005F8F5A /* OrganisationsTopViewController.h */,
@@ -267,6 +282,10 @@
 				1766540E16752C5800ECEE66 /* StudiengangsleitungTopViewController.h */,
 				1766540F16752C5800ECEE66 /* StudiengangsleitungTopViewController.m */,
 				179402CF1674C7CD005F8F5A /* iPad.storyboard */,
+				17552E0B168312E100B568F2 /* FH-KufsteinViewController.h */,
+				17552E0C168312E100B568F2 /* FH-KufsteinViewController.m */,
+				17552E08168312A500B568F2 /* Post-Graduate-ProgrammViewController.h */,
+				17552E09168312A500B568F2 /* Post-Graduate-ProgrammViewController.m */,
 				17A07094167621000049CEAB /* FaktenTopViewController.h */,
 				17A07095167621000049CEAB /* FaktenTopViewController.m */,
 			);
@@ -288,6 +307,8 @@
 		FAC2612A166F487C00D54CE4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				17552E051683051300B568F2 /* fhKufstein_messeApp_gridview_uebersicht_20121213.jpg */,
+				17A3684B167F4E320097B1BB /* fhKufstein_messeApp_gridview_STG_uebersicht_20121217.jpg */,
 				FAE065F2167721EA00A5931B /* MK_pic.jpg */,
 				FAE06603167721EA00A5931B /* MA_pic.jpg */,
 				FAE06604167721EA00A5931B /* BA_pic.jpg */,
@@ -402,6 +423,8 @@
 				FAE06608167721EA00A5931B /* BA_pic.jpg in Resources */,
 				FAE06609167721EA00A5931B /* LEBEN_pic.png in Resources */,
 				FAE0660A167721EA00A5931B /* FH_pic.png in Resources */,
+				17A3684C167F4E320097B1BB /* fhKufstein_messeApp_gridview_STG_uebersicht_20121217.jpg in Resources */,
+				17552E061683051300B568F2 /* fhKufstein_messeApp_gridview_uebersicht_20121213.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17552E0F1683135A00B568F2 /* FH-KufsteinViewController.m in Sources */,
 				FAE0661A167721EA00A5931B /* maSTGCell.m in Sources */,
 				FAE06619167721EA00A5931B /* maCollectionViewController.m in Sources */,
 				FAE06618167721EA00A5931B /* maCollectionViewMainController.m in Sources */,
@@ -430,10 +454,12 @@
 				17762D34167354F800CB26B4 /* AnimatedViewController.m in Sources */,
 				179402D31674CC94005F8F5A /* OrganisationsTopViewController.m in Sources */,
 				17665401167527E400ECEE66 /* HighlightsTopViewController.m in Sources */,
+				176654091675290100ECEE66 /* CurriculumTopViewController.m in Sources */,
 				1766540D16752B5000ECEE66 /* BerufsfelderTopViewController.m in Sources */,
 				1766541016752C5800ECEE66 /* StudiengangsleitungTopViewController.m in Sources */,
 				1766541616753B2100ECEE66 /* CurriculumViewController.m in Sources */,
 				17A07096167621010049CEAB /* FaktenTopViewController.m in Sources */,
+				17552E0A168312A500B568F2 /* Post-Graduate-ProgrammViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

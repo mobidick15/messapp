@@ -11,6 +11,7 @@
 #import "ExtrasViewController.h"
 
 @interface MenuViewController()
+@property (nonatomic, unsafe_unretained) CGFloat peekRightAmount;
 @property (nonatomic, strong) NSArray *Bachelor;
 @property (nonatomic, strong) NSArray *Bachalor_Sub;
 @property (nonatomic, strong) NSArray *Master;
@@ -20,6 +21,7 @@
 
 @implementation MenuViewController
 @synthesize Bachelor;
+@synthesize peekRightAmount;
 
 - (void)awakeFromNib
 {
@@ -58,9 +60,10 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  
-  [self.slidingViewController setAnchorRightRevealAmount:380.0f];
-  self.slidingViewController.underLeftWidthLayout = ECFullWidth;
+    
+    self.peekRightAmount = 600.0f;
+    [self.slidingViewController setAnchorRightPeekAmount:self.peekRightAmount];
+    self.slidingViewController.underLeftWidthLayout = ECVariableRevealWidth;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
